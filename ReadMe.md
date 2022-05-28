@@ -5,8 +5,9 @@ Action for uploading assets to an s3 bucket
 - Access Key ID
 - Secret Access Key
 - Region
+- Filepath 
 - Bucket
-- Op
+- Options
 
 
 ## Workflow usage
