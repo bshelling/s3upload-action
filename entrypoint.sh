@@ -1,10 +1,10 @@
 #!/bin/sh -l
-print "-------- Configuration start -----------"
+echo "-------- Configuration start -----------"
 aws configure set aws_access_key_id $1
 aws configure set aws_secret_access_key $2
 aws configure set region $3
-print "-------- Configuration Complete -----------"
-print " "
-print "Uploading....."
-aws s3 cp . $4 $5
-print "Upload complete"
+echo "-------- Configuration Complete -----------"
+echo " "
+echo "Uploading....."
+aws s3 cp $4 $5 --exclude ".github/*" --exclude ".git/*" $6
+echo "Upload complete"

@@ -13,6 +13,9 @@ inputs:
   region:
     description: "region"
     required: true
+  filepath:
+    description: "file path"
+    required: true
   bucket:
     description: "bucket"
     required: true
@@ -28,5 +31,6 @@ runs:
     - ${{ inputs.keyid }}
     - ${{ inputs.accesskey }}
     - ${{ inputs.region }}
+    - ${{ inputs.filepath }}
     - ${{ inputs.bucket }}
     - ${{ inputs.exclusion }}
