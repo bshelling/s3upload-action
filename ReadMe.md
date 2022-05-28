@@ -23,8 +23,9 @@ If the action is private, clone the action to the ./github directory
         keyid: ${{secrets.KEY}}
         accesskey: ${{secrets.ACCESS_KEY}}
         region: "us-east-1"
+        filepath: "."
         bucket: "s3://test-bucket"
-        options: "--exclude "
+        options: "--recursive"
 ```
 
 ## Testing
