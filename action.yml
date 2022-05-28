@@ -1,7 +1,7 @@
 name: 'S3 Bucket Upload Action'
 description: 'Action for uploading assets to an s3 bucket'
 branding:
-  icon: 'server'
+  icon: 'upload'
   color: 'orange'
 inputs:
   keyid:
