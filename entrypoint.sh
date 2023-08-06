@@ -6,5 +6,5 @@ aws configure set region $3
 echo "-------- Configuration Complete -----------"
 echo " "
 echo "Uploading....."
-aws s3 sync $4 $5 --exclude ".github/*" --exclude ".git/*" $6
+aws s3 sync $4 $5 $6
 echo "Upload complete"
