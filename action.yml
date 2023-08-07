@@ -13,16 +13,9 @@ inputs:
   region:
     description: "region"
     required: true
-  filepath:
-    description: "file path"
-    required: true
   bucket:
     description: "bucket"
     required: true
-  exclusion:
-    description: "exclusion"
-    required: true
-
 
 runs:
   using: 'docker'
@@ -31,6 +24,4 @@ runs:
     - ${{ inputs.keyid }}
     - ${{ inputs.accesskey }}
     - ${{ inputs.region }}
-    - ${{ inputs.filepath }}
     - ${{ inputs.bucket }}
-    - ${{ inputs.exclusion }}
