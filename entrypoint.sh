@@ -6,5 +6,5 @@ aws configure set region $3
 echo "-------- Configuration Complete -----------"
 echo " "
 echo "Uploading....."
-aws s3 cp . $4 --recursive --exclude .git/* --exclude .github/*
+aws s3 cp . $4 --recursive --exclude ".git/*" --exclude ".github/*"
 echo "Upload complete"
